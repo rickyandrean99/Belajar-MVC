@@ -20,7 +20,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="team-coins" class="form-label">Coins amount</label>
-                    <input type="number" class="form-control" id="team-coins" min="0" value="{{ $team->coins }}"name="team_coin">
+                    <input type="number" class="form-control" id="team-coins" min="0" value="{{ $team->coins }}" name="team_coin">
                 </div>
 
                 <button type="submit" class="btn btn-primary w-100 fw-bold">Update</button>
