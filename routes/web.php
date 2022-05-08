@@ -16,3 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::resource('team', 'TeamController');
+
+Route::get('type/{type}', 'EquipmentTypeController@categorizeEquipment');
+
+Route::get('transaction', 'EquipmentController@transaction')->name('transaction');
+Route::post('transaction/process', 'EquipmentController@processTransaction')->name('process-transaction');
